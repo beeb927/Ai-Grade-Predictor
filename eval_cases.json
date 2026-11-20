@@ -1,0 +1,14 @@
+{
+  "target": "Mark on Test",
+  "features": ["Hours of Sleep", "Hours studied"],
+  "task": "Regression",
+  "seed": 20,
+  "cases": [
+    {"name": "Typical inputs", "inputs": {"Hours of Sleep": "8", "Hours studied": "4"}},
+    {"name": "Low observed inputs", "inputs": {"Hours of Sleep": "4", "Hours studied": "2"}},
+    {"name": "Outside range", "inputs": {"Hours of Sleep": "8", "Hours studied": "10"}, "expect_warning": true},
+    {"name": "Missing input", "inputs": {"Hours of Sleep": "", "Hours studied": "4"}, "expect_error": true},
+    {"name": "Non-numeric input", "inputs": {"Hours of Sleep": "eight", "Hours studied": "4"}, "expect_error": true},
+    {"name": "Infinite input", "inputs": {"Hours of Sleep": "inf", "Hours studied": "4"}, "expect_error": true}
+  ]
+}
