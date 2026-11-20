@@ -5,6 +5,11 @@ model to predict a new record. Choose the target and input columns in the Tkinte
 app. The project uses pandas and scikit-learn, with optional PostgreSQL history and
 an optional local Ollama explanation and evaluation workflow.
 
+
+The AI Grade Predictor is a Python desktop app that turns spreadsheet data into a reusable prediction model. Users can import an Excel or CSV file, choose the target and input columns, and use the trained model to make predictions for new records. The interface uses Tkinter, while pandas and scikit-learn handle data preparation, training, and evaluation.
+
+The app can compare three models using cross-validation and report how the selected model performs on held-out data. The app also supports optional PostgreSQL storage for training runs, predictions, fitted models, and evaluation results. With Ollama enabled, a local language model explains individual predictions, and an automated judge scores those explanations on four criteria. A synthetic sample dataset is included so anyone can try training and prediction right away.
+
 ## Quick start
 
 Use Python 3.12 with Tk support. On Linux, install your distribution's Tkinter
